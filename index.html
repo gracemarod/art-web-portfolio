@@ -16,9 +16,8 @@
     <!--main css file-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
-
-    <link href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <!--contains all the div-->
@@ -121,12 +120,13 @@
                         </div>
                     <div class="portfolio-header"> <span class="color"> My </span> Portfolio
                     <span class ="header-caption"> Some Of My <span class="color"> Works</span></span></div>
+                    <!-- Start of Image Gallery -->
                      <div id="portfolio-content">
                 
-                        <div ID="ngy2p" data-nanogallery2='{
-                            "itemsBaseURL": "",
-                            "thumbnailWidth": "200",
-                            "thumbnailHeight": "auto",
+                        <div ID="gmrgallery" data-nanogallery2='{
+                            "itemsBaseURL": "./images/portfolio/",
+                            "thumbnailWidth": "300",
+                            "thumbnailHeight": "200",
                             "thumbnailLabel": {
                               "position": "overImageOnBottom"
                             },
@@ -134,26 +134,18 @@
                             "thumbnailAlignment": "center",
                             "galleryFilterTags": true,
                             "thumbnailLevelUp": true,
-                            "thumbnailOpenImage": true
+                            "thumbnailOpenImage": true,
+                            "displayBreadcrumb" : true,
+                            "galleryFilterTags": "description",
+                            "galleryFilterTagsMode": "multiple",
+                            "galleryL1FilterTagsMode": "multiple"
                           }'>
-                          <a href="" data-ngthumb="berlin1t.jpg" data-ngdesc="">Berlin 1</a>
-                          <a href="" data-ngthumb="berlin2t.jpg" data-ngdesc="">Berlin 2</a>
-                          <a href="" data-ngthumb="berlin3t.jpg" data-ngdesc="">Berlin 3</a>
-                    
+                          <a href="1_Mori_Vivi_Forest_Pipes_Rendered.jpg" data-ngthumb="thumbnails/tn_1_Mori_Vivi_Forest_Pipes_Rendered.jpeg" data-ngdesc="#digital">GMR_Art1</a>
+                          <a href="5_At_the_High_Line_Observation_Deck.jpeg" data-ngthumb="thumbnails/tn_5_At_the_High_Line_Observation_Deck.jpeg" data-ngdesc="#markers">GMR_Art2</a>
+                          <a href="19_Life_Figure_Drawing2.jpeg" data-ngthumb="thumbnails/tn_19_Life_Figure_Drawing2.jpeg" data-ngdesc="#sketch">GMR_Art3</a>
                         </div>
-                        <div class="portfolio portfolio-fourth">
-                            <div class=" portfolio-image">
-                                <img src="images/portfolio-fourth.jpg" alt="portfolio-fourth">
-                            </div>
-                            <div class="portfolio-text">
-                                <h2>Wow Graphics</h2>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad ut optio repellat cupiditate
-                                     expedita eius dignissimos. Id cumque placeat minima ad laudantium suscipit voluptatem ducimus</p>
-                                <div class="button"><a href="#"><button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button></a></div>
-                            </div>
-                        </div>
+                        <!-- End of Image Gallery -->
                          </div>
-                            <!--copyright-section You Can Remove After Downloading-->
                     <div class="footer">
                         <div class="footer-text">
                             <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Grace M Rodriguez-Gomez
@@ -216,7 +208,7 @@
             </div>
             <!--about picture-->
             <div class="about-img">
-                <img src="images/about.jpg" alt="Your Image">
+                <img src="" alt="Your Image">
             </div>
             </div>
     
@@ -400,7 +392,6 @@
         <!--contact end-->
     </div>
     <!--all the divisions-->
-    <script src="js/jquery.min.js"></script>
     <script src="js/particles.js"></script>
     <script src="js/particles.min.js"></script>
     <script src="js/index.js"></script>
