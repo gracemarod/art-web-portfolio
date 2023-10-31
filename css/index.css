@@ -383,7 +383,6 @@ body {
 }
 #about {
   background-color: #101010;
-  /* display: none; */
   width: 100%;
   height: auto;
   overflow: hidden;
@@ -829,7 +828,6 @@ button:hover .index {
 }
 
 #contact {
-  display: none;
   height: auto;
   text-align: center;
   width: 100%;
@@ -1157,9 +1155,9 @@ For devices with smaller width like mobile phone
     letter-spacing: 2px;
     font-size: 40px;
   }
-  .contact {
+  /* .contact {
     display: none;
-  }
+  } */
   .header-image {
     float: right;
     height: auto;
@@ -1182,16 +1180,16 @@ For devices with smaller width like mobile phone
     z-index: 2;
     text-align: center;
   }
-  #contact {
+  /* #contact {
     display: none;
-  }
+  } */
   #breaker {
     height: 50vh;
     width: 200%;
     background-color: #c70039;
     opacity: 1;
     animation: breakeranimate 2s linear;
-    display: none;
+    /* display: none; */
     transition: all 0.4s ease;
     z-index: 10;
     position: fixed;
@@ -1547,16 +1545,16 @@ for tabs and large phones
     z-index: 2;
     text-align: center;
   }
-  .contact {
+  /* .contact {
     display: none;
-  }
+  } */
   #breaker {
     height: 50vh;
     width: 200%;
     background-color: #c70039;
     opacity: 1;
     animation: breakeranimate 2s linear;
-    display: none;
+    /* display: none; */
     transition: all 0.4s ease;
     z-index: 10;
     position: fixed;
