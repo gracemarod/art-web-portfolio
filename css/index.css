@@ -297,11 +297,11 @@ body {
 .navigation-links a::before {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 100%;
   left: 50%;
   display: flex;
   justify-content: center;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -20%);
   align-items: center;
   font-size: 5em;
   font-weight: 400;
