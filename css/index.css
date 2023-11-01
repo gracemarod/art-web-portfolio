@@ -536,6 +536,7 @@ body {
 .skills-content {
   height: auto;
   width: 100%;
+  display: flex;
   margin-top: 20px;
   margin-bottom: 80px;
 }
@@ -548,6 +549,9 @@ body {
   color: whitesmoke;
   display: inline-block;
   padding: 1.5%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .skill-text {
   width: 80%;
@@ -784,6 +788,7 @@ button:hover .index {
   width: 100%;
   display: flex;
   height: auto;
+  margin: 5vh;
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
@@ -862,12 +867,11 @@ button:hover .index {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 .contact-info {
   width: 40%;
   height: 500px;
-  background: url(../images/contact-back.jpg);
   background-position: center;
   background-size: cover;
   border-radius: 16px;
@@ -886,12 +890,18 @@ button:hover .index {
   opacity: 0.8;
   pointer-events: none;
 }
-.contact-form {
-  height: 550px;
-  padding-right: 40px;
-  width: 60%;
-  display: flex;
-  flex-direction: column;
+.contact-image {
+  width: 40%;
+  height: 500px;
+  background: url(../images/contact-back.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 16px;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+.art {
+  height: 500px;
 }
 form {
   display: flex;
@@ -1296,6 +1306,7 @@ For devices with smaller width like mobile phone
   .skills-content {
     height: auto;
     width: 100%;
+    display: flex;
     margin-top: 20px;
     margin-bottom: 15px;
   }
@@ -1673,6 +1684,7 @@ for tabs and large phones
   .skills-content {
     height: auto;
     width: 100%;
+    display: flex;
     margin-top: 20px;
     margin-bottom: 15px;
   }
