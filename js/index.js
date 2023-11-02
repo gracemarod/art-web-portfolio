@@ -85,26 +85,7 @@ $(function(){
         document.body.appendChild(css);
       };
 })
-$(function(){
 
-// 
-
-$('#home-link').on('click',function(){
-  gsap.to('#navigation-content',0,{display:"none",delay:.7});
-  gsap.to('#navigation-content',0,{y:'-100%',delay:.7});
-gsap.to('#header',0,{display:"none"});
-// gsap.to('#about',0,{display:"none"});
-gsap.to('#portfolio',0,{display:"none"});
-// gsap.to('#contact',0,{display:"none"});
-gsap.to('#breaker',0,{display:"block"});
-gsap.to('#breaker-two',0,{display:"block",delay:.1});
-gsap.to('#breaker',0,{display:"none",delay:2});
-gsap.to('#breaker-two',0,{display:"none",delay:2});
-gsap.to('#header',0,{display:"block",delay:.7});
-gsap.to('#navigation-content',0,{display:'flex',delay:2});
-})
-
-})
 $(function(){
  var body =  document.querySelector('body');
  var $cursor = $('.cursor')
@@ -135,3 +116,36 @@ $(function(){
   $('.navigation-close').hover(cursorhover,cursor);
 
 })
+
+  $("#gmrgallery").nanogallery2({
+    itemsBaseURL: './images/portfolio/',
+    thumbnailWidth: 300,
+    thumbnailHeight: 200,
+    thumbnailLabel: {
+      position: 'overImageOnBottom'
+    },
+    thumbnailHoverEffect2: 'toolsSlideUp|imageGrayOff|scale120',
+    thumbnailAlignment: 'center',
+    galleryFilterTags: true,
+    thumbnailLevelUp: true,
+    thumbnailOpenImage: true,
+    displayBreadcrumb : true,
+    galleryFilterTags: 'description',
+    galleryFilterTagsMode: 'multiple',
+    galleryL1FilterTagsMode: 'multiple',
+    galleryTheme: {
+        navigationBar: { 
+            background : '#8e61e1',
+            
+        },
+    },
+    items: [
+      {src: 'Mori_Vivi_Forest_Pipes_Rendered.jpg', srct: 'thumbnails/tn_1_Mori_Vivi_Forest_Pipes_Rendered.jpeg', description:'#digital'},
+      {src: 'At_the_High_Line_Observation_Deck.jpeg', srct:'thumbnails/tn_5_At_the_High_Line_Observation_Deck.jpeg', description: '#traditional'},
+      {src: 'Life_Drawing2.jpeg', srct: 'thumbnails/tn_19_Life_Figure_Drawing2.jpeg', description: '#figurative'},
+      {src: 'Black_Elf.jpeg' , srct: '', description:'#digital' },
+      {src: 'LifeDrawing_ColoredPencils.jpeg', srct:'' , description: '#figurative' },
+      {src: 'Master_studies_ghibli_background.png', srct:'', description: '#digital'},
+      {src: 'Renatus.jpg', srct:'', description: '#characterization'},
+    ]
+  })

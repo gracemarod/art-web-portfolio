@@ -378,7 +378,7 @@ body {
   }
 }
 .color {
-  color: #c70039;
+  color: #8e61e1;
   transition: all 0.4s ease;
 }
 #about {
@@ -462,12 +462,11 @@ body {
 }
 .about-img img {
   width: 100%;
-  height: 380px;
   padding: 30px;
   border-radius: 40px;
 }
 .about-img {
-  width: 550px;
+  width: 40%;
   height: auto;
   padding: 30px;
   padding-top: 10px;
@@ -785,7 +784,6 @@ button:hover .index {
   z-index: 2;
 }
 #portfolio-content {
-  width: 100%;
   display: flex;
   height: auto;
   margin: 5vh;
@@ -799,6 +797,12 @@ button:hover .index {
   background-color: #101010;
   width: 100%;
   color: whitesmoke;
+}
+/* navigation bar for portfolio */
+.nGY2Navigationbar {
+  display: flex !important;
+  justify-content: center;
+  border-radius: 4px
 }
 
 .cursor {
@@ -1096,7 +1100,7 @@ form button:hover {
   background: #c70039;
 }
 .color-purple {
-  background: #481380;
+  background: #8e61e1;
 }
 .color-green {
   background: #04a777;
@@ -1286,12 +1290,11 @@ For devices with smaller width like mobile phone
   }
   .about-img img {
     width: 280px;
-    height: 220px;
     padding: 5px;
     border-radius: 10%;
   }
   .about-img {
-    width: 100%;
+    width: 50%;
     height: 250px;
     text-align: center;
     overflow: hidden;
@@ -1651,12 +1654,11 @@ for tabs and large phones
   }
   .about-img img {
     width: 100%;
-    height: 380px;
     padding: 30px;
     border-radius: 40px;
   }
   .about-img {
-    width: 550px;
+    width: 50%;
     height: auto;
     padding: 30px;
     padding-top: 10px;
@@ -1891,14 +1893,12 @@ for tabs and large phones
   }
   .about-img img {
     width: 100%;
-    height: 450px;
     padding: 30px;
     border-radius: 40px;
     animation: opacity 1.4s ease;
   }
   .about-img {
     width: 40%;
-    height: 450px;
     padding: 30px;
     border-radius: 40px;
   }
