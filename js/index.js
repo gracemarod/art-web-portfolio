@@ -6,25 +6,17 @@ $(window).on('load',function(){
   gsap.to('#navigation-content',0,{display:"none"});
   gsap.to('#navigation-content',0,{display:"flex",delay:1});
 })
+
 $(function(){
-  $('.color-panel').on("click",function(e) {
+
+  $('.menubar').on("click", function(e) {
     e.preventDefault();
-    $('.color-changer').toggleClass('color-changer-active');
-});
-$('.colors a').on("click",function(e) {
-  e.preventDefault();
-  var attr = $(this).attr("title");
-  console.log(attr);
-  $('head').append('<link rel="stylesheet" href="css/'+attr+'.css">');
-});
-});
-$(function(){
-     $('.menubar').on('click',function(){
-         gsap.to('#navigation-content',.6,{y:0});
-     })
-     $('.navigation-close').on('click',function(){
-        gsap.to('#navigation-content',.6,{y:"-100%"});
-    });
+    var navbarLinks = document.getElementById("navbar-links");
+    if (navbarLinks.classList.contains('responsive')) {
+      navbarLinks.classList.remove('responsive');
+    }else navbarLinks.classList.add('responsive');
+  });
+
    }); 
 
 $(function(){
@@ -119,17 +111,47 @@ $(function(){
 
   $("#gmrgallery").nanogallery2({
     itemsBaseURL: './images/portfolio/',
-    thumbnailWidth: 300,
-    thumbnailHeight: 200,
+
+    //Mosaic Settings for each image
+   galleryMosaic : [                     
+    { w: 2, h: 2, c: 2, r: 1 }, //MoriVivi
+    { w: 1, h: 1, c: 1, r: 2 }, //HighLine
+    { w: 2, h: 2, c: 5, r: 4 }, //1 hr Life Drawing
+    { w: 2, h: 3, c: 4, r: 1 }, //Galaxy Hair
+    { w: 2, h: 3, c: 1, r: 3 }, //Black Elf
+    { w: 2, h: 2, c: 3, r: 4 }, //Colored Pencil
+    { w: 1, h: 1, c: 1, r: 1 }, //Master Studies Ghiblie
+    { w: 1, h: 3, c: 6, r: 1 }, //Renatus
+  ],
+   // layout for XS width
+    galleryMosaicXS : [                    
+    { w: 4, h: 5, c: 1, r: 1 }
+  ],
+   // layout for SM width
+    galleryMosaicSM : [                    
+    { w: 2, h: 2, c: 1, r: 1 },
+    { w: 1, h: 1, c: 3, r: 1 },
+    { w: 1, h: 1, c: 3, r: 2 },
+    { w: 1, h: 2, c: 1, r: 3 },
+    { w: 2, h: 3, c: 2, r: 3 },
+  ],
+    //Settings for images thumbnails
+    galleryMaxRows: 1,
+    galleryDisplayMode: 'rows',
     thumbnailLabel: {
       position: 'overImageOnBottom'
     },
-    thumbnailHoverEffect2: 'toolsSlideUp|imageGrayOff|scale120',
+    thumbnailHoverEffect2: 'toolsSlideUp|scale120',
     thumbnailAlignment: 'center',
-    galleryFilterTags: true,
     thumbnailLevelUp: true,
     thumbnailOpenImage: true,
-    displayBreadcrumb : true,
+    thumbnailAlignment: 'scaled',
+    thumbnailGutterWidth: 2,
+    thumbnailGutterHeight: 2,
+    touchAnimation: true,
+    touchAutoOpenDelay: 500,
+    // Settings for Navigation Bar and Tags
+    galleryFilterTags: true,
     galleryFilterTags: 'description',
     galleryFilterTagsMode: 'multiple',
     galleryL1FilterTagsMode: 'multiple',
@@ -140,12 +162,13 @@ $(function(){
         },
     },
     items: [
-      {src: 'Mori_Vivi_Forest_Pipes_Rendered.jpg', srct: 'thumbnails/tn_1_Mori_Vivi_Forest_Pipes_Rendered.jpeg', description:'#digital'},
-      {src: 'At_the_High_Line_Observation_Deck.jpeg', srct:'thumbnails/tn_5_At_the_High_Line_Observation_Deck.jpeg', description: '#traditional'},
-      {src: 'Life_Drawing2.jpeg', srct: 'thumbnails/tn_19_Life_Figure_Drawing2.jpeg', description: '#figurative'},
-      {src: 'Black_Elf.jpeg' , srct: '', description:'#digital' },
-      {src: 'LifeDrawing_ColoredPencils.jpeg', srct:'' , description: '#figurative' },
-      {src: 'Master_studies_ghibli_background.png', srct:'', description: '#digital'},
-      {src: 'Renatus.jpg', srct:'', description: '#characterization'},
+      {src: 'Mori_Vivi_Forest_Pipes_Rendered.jpg', srct: 'thumbnails/tn_Mori_Vivi_Forest_Pipes_Rendered.jpg', description:'#digital'},
+      {src: 'At_the_High_Line_Observation_Deck.jpeg', srct:'thumbnails/tn_At_the_High_Line_Observation_Deck.jpeg', description: '#traditional'},
+      {src: 'Life_Drawing2.jpeg', srct: 'thumbnails/tn_Life_Drawing2.jpeg', description: '#figurative'},
+      {src: 'Dream_of_the_Galaxy.jpg', srct:'thumbnails/tn_Dream_of_the_Galaxy.jpg', description: '#traditional'},
+      {src: 'Black_Elf.jpeg' , srct: 'thumbnails/tn_Black_Elf.jpeg', description:'#digital' },
+      {src: 'LifeDrawing_ColoredPencils.jpeg', srct:'thumbnails/tn_LifeDrawing_ColoredPencils.jpeg' , description: '#figurative' },
+      {src: 'Master_studies_ghibli_background.png', srct:'thumbnails/tn_Master_studies_ghibli_background.png', description: '#digital'},
+      {src: 'Renatus.jpg', srct:'thumbnails/tn_Renatus.jpg', description: '#characterization'}
     ]
   })
