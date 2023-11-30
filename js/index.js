@@ -155,20 +155,24 @@ $(function(){
     galleryFilterTags: 'description',
     galleryFilterTagsMode: 'multiple',
     galleryL1FilterTagsMode: 'multiple',
+    //settings for Lightbox
+    viewerTools:    {
+      topLeft:   'label',
+      topRight: 'pageCounter, rotateLeft, rotateRight, fullscreenButton, closeButton'
+    },
     galleryTheme: {
         navigationBar: { 
             background : '#8e61e1',
-            
         },
     },
     items: [
-      {src: 'Mori_Vivi_Forest_Pipes_Rendered.jpg', srct: 'thumbnails/tn_Mori_Vivi_Forest_Pipes_Rendered.jpg', description:'#digital'},
-      {src: 'At_the_High_Line_Observation_Deck.jpeg', srct:'thumbnails/tn_At_the_High_Line_Observation_Deck.jpeg', description: '#traditional'},
-      {src: 'Life_Drawing2.jpeg', srct: 'thumbnails/tn_Life_Drawing2.jpeg', description: '#figurative'},
-      {src: 'Dream_of_the_Galaxy.jpg', srct:'thumbnails/tn_Dream_of_the_Galaxy.jpg', description: '#traditional'},
-      {src: 'Black_Elf.jpeg' , srct: 'thumbnails/tn_Black_Elf.jpeg', description:'#digital' },
-      {src: 'LifeDrawing_ColoredPencils.jpeg', srct:'thumbnails/tn_LifeDrawing_ColoredPencils.jpeg' , description: '#figurative' },
-      {src: 'Master_studies_ghibli_background.png', srct:'thumbnails/tn_Master_studies_ghibli_background.png', description: '#digital'},
-      {src: 'Renatus.jpg', srct:'thumbnails/tn_Renatus.jpg', description: '#characterization'}
+      {src: 'Mori_Vivi_Forest_Pipes_Rendered.jpg', srct: 'thumbnails/tn_Mori_Vivi_Forest_Pipes_Rendered.jpg', description:'#digital', title:'The Hidden Pipes in Morivivi\'s Forest'},
+      {src: 'At_the_High_Line_Observation_Deck.jpeg', srct:'thumbnails/tn_At_the_High_Line_Observation_Deck.jpeg', description: '#traditional', title:'At the High Line Observation Deck', },
+      {src: 'Life_Drawing2.jpeg', srct: 'thumbnails/tn_Life_Drawing2.jpeg', description: '#figurative', title:'Long Pose Figure Drawing Study with Pencil'},
+      {src: 'Galaxy_Dreams.jpg', srct:'thumbnails/tn_Galaxy_Dreams.jpg', description: '#traditional', title: 'Galaxy Dreams'},
+      {src: 'Black_Elf.jpeg', srct: 'thumbnails/tn_Black_Elf.jpeg', description:'#digital', title: 'High Fantasy Black Elf' },
+      {src: 'LifeDrawing_ColoredPencils.jpeg', srct:'thumbnails/tn_LifeDrawing_ColoredPencils.jpeg' , description: '#figurative', title: 'Long Pose Figure Drawing Study with Colored Pencils' },
+      {src: 'Master_studies_ghibli_background.png', srct:'thumbnails/tn_Master_studies_ghibli_background.png', description: '#digital', title:'Master Study of Ghibli\'s Vegetation'},
+      {src: 'Renatus.jpg', srct:'thumbnails/tn_Renatus.jpg', description: '#characterization', title:'Renatus'}
     ]
   })

@@ -811,8 +811,22 @@ button:hover .index {
   border-radius: 4px;
 }
 
-.nGY2NavigationbarItem {
-  /* margin-left: 20px !important; */
+.web-projects {
+  margin: 2vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.web-projects .header-caption {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.web-project-title {
+  font-family: raleway;
+  color: whitesmoke;
+  margin: 10px 0;
 }
 
 .cursor {
@@ -904,10 +918,10 @@ button:hover .index {
   pointer-events: none;
 }
 .contact-image {
-  width: 30%;
+  width: 40%;
   height: auto;
-  padding: 30px;
-  padding-top: 10px;
+
+  
   border-radius: 40px;
 }
 
