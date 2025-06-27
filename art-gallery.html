@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Grace M Rodriguez-Gomez - Personal Portfolio Website"
+    />
+    <meta
+      name="keywords"
+      content="business card, creative, creative portfolio, cv theme, online resume, personal, portfolio, professional cv, responsive portfolio, resume, resume theme, vcard"
+    />
+    <meta name="author" content="willy wonka" />
+    <title>Grace M Rodriguez-Gomez - Personal Portfolio Website</title>
+    <!--favicon-img-->
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <!--favicon-img-->
+    <!--main css file should not be removed -->
+    <link rel="stylesheet" href="css/index.css"/>
+    <!--main css file-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"
+    ></script>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <!--contains all the div-->
+    <div id="all">
+      <!--mouse  follower-->
+      <div class="cursor"></div>
+      <!--mouse  follower-->
+      <!--loader-->
+      <div id="loader"><span class="color">Grace</span>Rodriguez</div>
+      <!--loader-end-->
+      <!--link-screen-->
+      <div id="breaker"></div>
+      <div id="breaker-two"></div>
+      <!--link-screen-->
+      <!--Main-Section-->
+      <!--Navigator-fullscreen-->
+      <div id="navigation-content">
+        <div id="navbar-links" class="navigation-links">
+          <a href="./index.html" data-text="HOME" id="home-link">HOME</a>
+          <a href="./art-gallery.html" data-text="PORTFOLIO" id="portfolio-link">ART PORTFOLIO</a>
+          <a href="./index.html#about" data-text="ABOUT" id="about-link">ABOUT</a>
+          <a href="./index.html#contact" data-text="CONTACT" id="contact-link">CONTACT</a>
+          <a href="https://drive.google.com/file/d/1jDiT6LBT8F3XrnhIf0IYOXThO4Rs0mbH/view?usp=sharing" data-text="RESUME" id="about-link">RESUME</a>
+        </div>
+          <div class="menubar">
+            <span class="first-span"></span>
+            <span class="second-span"></span>
+            <span class="third-span"></span>
+          </div>
+      </div>
+      <!--Navigator-Fullscreen END-->
+      <!--Home Page-->
+      <!--Header-->
+      <div class="header-gallery">
+      </div>
+      <!--Header End-->
+
+      <!--HomePage End-->
+      <!--Main-Section End-->
+
+      <!--portfolio-->
+      <div id="portfolio">
+        <div class="portfolio-header">
+          <span class="color"> Art </span> Portfolio 
+          <span class="header-caption">
+            Some Of My <span class="color"> Work</span>
+          </span>
+        </div>
+        <!-- Start of Image Gallery -->
+        <div id="portfolio-content">
+            <div id="gmrgallery"></div>
+          <!-- End of Image Gallery -->
+          <div class="web-projects">
+            <span class="header-caption">
+              Web Projects</span>
+            </span>
+            <p class="web-project-title">Purple Sunset</p>
+            <p class="codepen" data-height="400" data-theme-id="dark" data-default-tab="html,result" data-slug-hash="vYyvKXd" data-user="gracemarod" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+              <span>See the Pen <a href="https://codepen.io/gracemarod/pen/vYyvKXd">
+              Purple Sunset</a> by Grace M. Rodriguez (<a href="https://codepen.io/gracemarod">@gracemarod</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--portfolio end-->
+
+    </div>
+    <!--all the divisions-->
+    <script src="js/particles.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/index.js"></script>
+    <!--particles script-->
+    <script>
+      particlesJS("particles", {
+        particles: {
+          number: { value: 40, density: { enable: true, value_area: 800 } },
+          color: { value: "#ffffff" },
+          shape: {
+            type: "circle",
+            stroke: { width: 0, color: "#000000" },
+            polygon: { nb_sides: 5 },
+            image: { src: "img/github.svg", width: 100, height: 100 },
+          },
+          opacity: {
+            value: 0.5,
+            random: false,
+            anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false },
+          },
+          size: {
+            value: 3,
+            random: true,
+            anim: { enable: false, speed: 40, size_min: 0.1, sync: false },
+          },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#ffffff",
+            opacity: 0.4,
+            width: 1,
+          },
+          move: {
+            enable: true,
+            speed: 6,
+            direction: "none",
+            random: false,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+            attract: { enable: false, rotateX: 600, rotateY: 1200 },
+          },
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: { enable: true, mode: "repulse" },
+            onclick: { enable: true, mode: "push" },
+            resize: true,
+          },
+          modes: {
+            grab: { distance: 400, line_linked: { opacity: 1 } },
+            bubble: {
+              distance: 400,
+              size: 40,
+              duration: 2,
+              opacity: 8,
+              speed: 3,
+            },
+            repulse: { distance: 200, duration: 0.4 },
+            push: { particles_nb: 4 },
+            remove: { particles_nb: 2 },
+          },
+        },
+        retina_detect: true,
+      });
+    </script>
+  </body>
+</html>

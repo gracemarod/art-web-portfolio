@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        img, video {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="project-title"></h1>
+    <p id="project-description"></p>
+    <!-- <img id="project-image" alt="Project Image" /> -->
+    <!-- <video id="project-video" controls></video> -->
+
+    <script>
+   const csvFile = './data/projects.csv'; // Path to your local CSV file
+
+    fetch(csvFile)
+    .then(response => response.text())
+    .then(csvText => {
+        const projects = csvToObjects(csvText); // Parse CSV data into objects
+        renderData(projects); // Pass parsed data to render function
+    });
+
+    function csvToObjects(csv) {
+    const rows = csv.split("\n").filter(row => row.trim() !== ""); // Split into rows and remove empty lines
+    const headers = rows[0].split(",").map(header => header.trim()); // Get headers from the first row
+    return rows.slice(1).map(row => {
+        const values = row.split(",").map(value => value.trim()); // Split row into values
+        return headers.reduce((obj, header, index) => {
+        obj[header] = values[index]; // Map headers to corresponding values
+        return obj;
+        }, {});
+    });
+    }
+
+    function renderData(data) {
+    const container = document.getElementById('project-description');
+    container.innerHTML = ""; // Clear existing content
+
+    data.forEach(item => {
+        console.log("Data: ", data);
+        const projectDiv = document.createElement('div');
+        projectDiv.className = "project";
+
+        projectDiv.innerHTML = `
+        <h3>${item.name}</h3>
+        <p>${item.overview}</p>
+        <p>${item.roles}</p>
+            `;
+        container.appendChild(projectDiv);
+    });
+    }
+
+    </script>
+</body>
+</html>
