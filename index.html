@@ -29,6 +29,7 @@
       src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"
     ></script>
     <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    <script async src="./js/components/nav-bar.js"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css"
       rel="stylesheet"
@@ -42,7 +43,7 @@
       <div class="cursor"></div>
       <!--mouse  follower-->
       <!--loader-->
-      <div id="loader"><span class="color">Grace</span>Rodr&#237;guez Gom&#243;z</div>
+      <div id="loader"><span class="color-title-purple">Grace</span>Rodr&#237;guez Gom&#243;z</div>
       <!--loader-end-->
       <!--link-screen-->
       <div id="breaker"></div>
@@ -51,22 +52,9 @@
       <!--Main-Section-->
       <!--Navigator-fullscreen-->
       <div id="navigation-content">
-        <div id="navbar-links" class="navigation-links">
-          <a href="./index.html" data-text="HOME" id="home-link">HOME</a>
-          <a href="#projects" data-text="PROJECTS" id="home-link">PROJECTS</a>
-          <a href="./art-gallery.html" data-text="PORTFOLIO" id="portfolio-link">ART PORTFOLIO</a>
-          <a href="#about" data-text="ABOUT" id="about-link">ABOUT</a>
-          <a href="#contact" data-text="CONTACT" id="contact-link">CONTACT</a>
-          <a href="https://drive.google.com/file/d/1jDiT6LBT8F3XrnhIf0IYOXThO4Rs0mbH/view?usp=sharing" data-text="RESUME" id="about-link">RESUME</a>
-        </div>
-          <div class="menubar">
-            <span class="first-span"></span>
-            <span class="second-span"></span>
-            <span class="third-span"></span>
-          </div>
+        <a href="./components/navigation-bar.html"></a>
       </div>
-      <!--Navigator-Fullscreen END-->
-      <!--Home Page-->
+      <navbar-component></navbar-component>
       <!--Header-->
       <div id="header">
         <div id="particles"></div>
@@ -87,7 +75,7 @@
         <div class="header-content">
           <div class="header-content-box">
             <div class="firstline">
-              <span class="color">Grace </span> M. Rodr&#237;guez G&#243;mez
+              <span class="color-title-purple">Grace </span> M. Rodr&#237;guez G&#243;mez
             </div>
             <div class="secondline">
               I'm
@@ -111,7 +99,7 @@
 
       <div id="demo-reel">
         <div class="section-header">
-          Demo <span class="color">Reel</span>
+          Demo <span class="color-title-purple">Reel</span>
         </div>
           <div class="iframe-container">
             <iframe class="responsive-iframe" src="https://www.youtube.com/embed/lcLWqtvMhKk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -120,9 +108,9 @@
       <!-- projects-->
       <div id="projects">
         <div class="section-header">
-          My <span class="color">Projects</span>
+          My <span class="color-title-purple">Projects</span>
           <div class="header-caption">
-            <span class="color">Explore</span> My Work.
+            <span class="color-title-purple">Explore</span> My Work.
           </div>
         </div>
         
@@ -138,7 +126,7 @@
           </div>
           
           <div class="project-item">
-            <a href="./projects/project_Anamnesis.html">
+            <a href="./projects/Anamnesis.html">
               <img src="images/project-main/InteractiveStoryLabs.jpg" alt="Photo of a Camera lens with an Oscar in the Center" class="project-image" />
               </a>
             <div class="project-info">
@@ -149,10 +137,12 @@
           </div>
           
           <div class="project-item">
-            <img src="images/project-main/MonkeyingAround.png" alt="Colorful title Monkeying Around and a monkey paw." class="project-image" />
+            <a href="./projects/Monkeying_Around.html">
+              <img src="images/project-main/MonkeyingAround.png" alt="Colorful title Monkeying Around and a monkey paw." class="project-image" />
+            </a>
               <div class="project-info">
                 <h3 class="project-title">Monkeying Around</h3>
-                <p class="project-description">In this VR adventure,the player a lost monkey plushie must climb, using hand-motion climbing mechanics, through shelves in a toy store basement to reunite with its mom on the top shelf.</p>
+                <p class="project-description">In this VR adventure, the player is a lost monkey plushie that must climb, through shelves in a toy store basement to reunite with it's mom.</p>
                 <p class="project-role">Role: Programmer and Environment Artist</p>
               </div>
             </div>
@@ -196,15 +186,15 @@
         <!--about content-->
         <div id="about-content">
           <div class="section-header">
-            About <span class="color">Me</span>
-            <span class="header-caption">Get to Know <span class="color"> me.</span></span>
+            About <span class="color-title-purple">Me</span>
+            <span class="header-caption">Get to Know <span class="color-title-purple"> me.</span></span>
           </div>
           <div class="about-main">
             <div class="about-first-paragraph wow">
               <!--about description-->
               <span class="about-first-line">
                 I'm a 
-                <span class="color">Technical Artist</span>
+                <span class="color-title-purple">Technical Artist</span>
                 
               </span>
               <br/>
@@ -223,7 +213,7 @@
         </div>
 
         <div id="skills">
-          <div class="section-header"><span class="color"> Skills and Softwares </span></div>
+          <div class="section-header"><span class="color-title-purple"> Skills and Softwares </span></div>
           <div class="skills-content" style="text-align: center">
             <div class="skill-html skill"></div>
             <div class="skill-html skill">C#</div>
@@ -247,9 +237,9 @@
       <!--contact-->
       <div id="contact">
         <div class="section-header">
-          Contact <span class="color"> Me</span>
+          Contact <span class="color-title-purple"> Me</span>
           <div class="header-caption">
-            <span class="color"> Get</span> In Touch.
+            <span class="color-title-purple"> Get</span> In Touch.
           </div>
         </div>
         <div class="contact-content">

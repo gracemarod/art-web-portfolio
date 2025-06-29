@@ -415,7 +415,7 @@ body {
     transform: translateX(100%);
   }
 }
-.color {
+.color-title-purple {
   color: #8e61e1;
   transition: all 0.4s ease;
 }
@@ -1181,6 +1181,9 @@ form button:hover {
 .color-orange {
   background: #dd7631;
 }
+.color-white {
+  color:whitesmoke;
+}
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
@@ -1925,6 +1928,10 @@ for tabs and large phones
   align-items: center;
 }
 .description-section {
+  color:whitesmoke;
+}
+
+.project-page .info h3 {
   color:whitesmoke;
 }
 

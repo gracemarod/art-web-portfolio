@@ -21,22 +21,7 @@
   </head>
   <body>
     <!-- Navigation -->
-    <div id="navigation-content">
-      <div id="navbar-links" class="navigation-links">
-        <a href="../index.html" data-text="HOME" id="home-link">HOME</a>
-        <a href="./index.html#projects" data-text="PROJECTS" id="home-link">PROJECTS</a>
-        <a href="./art-gallery.html" data-text="PORTFOLIO" id="portfolio-link">ART PORTFOLIO</a>
-        <a href="./index.html#about" data-text="ABOUT" id="about-link">ABOUT</a>
-        <a href="./index.html#contact" data-text="CONTACT" id="contact-link">CONTACT</a>
-        <a href="https://drive.google.com/file/d/1jDiT6LBT8F3XrnhIf0IYOXThO4Rs0mbH/view?usp=sharing" data-text="RESUME" id="about-link">RESUME</a>
-      </div>
-      <div class="menubar">
-        <span class="first-span"></span>
-        <span class="second-span"></span>
-        <span class="third-span"></span>
-      </div>
-    </div>
-
+    <navbar-component></navbar-component>
     <!-- Project Page Content -->
     <div class="project-page">
       <div class="section-header">
@@ -61,6 +46,10 @@
         </p>
       </div>
 
+      <div>
+        <h3>Tools and Software</h3>
+        <p>Unity3D - C# - ORBBEC Fento Bolt Sensor </p>
+       </div>
       <!-- Screenshot Section -->
       <!-- <div class="screenshot-section">
         <img src="../images/projects/project1-screenshot1.jpg" alt="Project 1 Screenshot 1" />
@@ -71,7 +60,7 @@
 
       <!-- My Role Section -->
       <div class="role-section">
-        <h3>What I Did</h3>
+        <h3>My Contributions</h3>
         <p>
           I replicated the CAVERN display in the Unity3D with the same scales by adding a cylinder mesh. I also added a canvas object of 5060 x 2060 pixels, which are the pixels of the CAVERN display. For the particular way the projectors are set up, there needs to be two image frames with the same image or video and in the same position for film to be displayed correctly. 
         </p>
@@ -96,8 +85,6 @@
         <p>I also assisted with the film shooting by managing the costumes and props for all the scenes.</p> 
 
         <!-- <img src="../images/projects/InteractiStoryLabs/Week1 Test.png" alt="Project 1 Role Image" /> -->
-        <h3>Tools and Software</h3>
-        <p>Unity3D - C# - ORBBEC Fento Bolt Sensor </p>
       </div>
 
       <!-- Team Section -->
@@ -111,7 +98,7 @@
               <li><a href="https://pacomireles.myportfolio.com/">Jos&#233; Mireles Macario</a> - Cinematographer and Editor</li>
               <li><a href="https://www.artstation.com/zixuanhe">Zixuan (Lucy) He</a> - VFX Artist</li>
             </ul>
-      </div>
+          </div>
       </div>
 
       <!-- Website Link -->
@@ -121,6 +108,7 @@
     </div>
 
     <!-- Scripts -->
-    <script src="../js/index.js"></script>
+    <script async src="../js/index.js"></script>
+    <script async src="./js/components/nav-bar.js"></script>
   </body>
 </html>
