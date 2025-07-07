@@ -1167,7 +1167,7 @@ form button:hover {
   background: #c70039;
 }
 .color-purple {
-  background: #8e61e1;
+  color: #8e61e1;
 }
 .color-green {
   background: #04a777;
@@ -1874,12 +1874,17 @@ for tabs and large phones
   gap: 20px;
   margin-top: 40px;
 }
+.project-page .team-section .project-team-members{
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  flex-wrap: wrap;
+  gap: 0 5%;
+}
 
 .project-page .team-section img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
   object-fit: cover;
+  max-width: 40vw;
 }
 
 .project-page .team-section .project-team-members ul {
@@ -1922,6 +1927,18 @@ for tabs and large phones
  padding: 0;
  font-size: 0.8em;
 }
+
+.project-page-images {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+} 
+
+.project-page-images img{
+  max-height: 40vw;
+}
+
 .project-page .website-link:hover {
   background-color: #7a4dcc;
 }
