@@ -1956,3 +1956,8 @@ for tabs and large phones
   color:whitesmoke;
 }
 
+.project-page .promotional-image{
+  max-height: 40vw;
+  justify-content: center;
+  align-content: center;
+}
