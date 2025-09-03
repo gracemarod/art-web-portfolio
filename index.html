@@ -54,7 +54,21 @@
       <!-- <div id="navigation-content">
         <a href="./components/navigation-bar.html"></a>
       </div> -->
-      <navbar-component></navbar-component>
+      <div id="navigation-content">
+        <div id="navbar-links" class="navigation-links">
+          <a href="./index.html" data-text="HOME" id="home-link">HOME</a>
+          <a href="#projects" data-text="PROJECTS" id="home-link">PROJECTS</a>
+          <a href="./art-gallery.html" data-text="PORTFOLIO" id="portfolio-link">ART PORTFOLIO</a>
+          <a href="#about" data-text="ABOUT" id="about-link">ABOUT</a>
+          <a href="#contact" data-text="CONTACT" id="contact-link">CONTACT</a>
+          <a href="https://drive.google.com/file/d/1jDiT6LBT8F3XrnhIf0IYOXThO4Rs0mbH/view?usp=sharing" data-text="RESUME" id="about-link">RESUME</a>
+        </div>
+          <div class="menubar">
+            <span class="first-span"></span>
+            <span class="second-span"></span>
+            <span class="third-span"></span>
+          </div>
+      </div>
       <!--Header-->
       <div id="header">
         <div id="particles"></div>
@@ -116,11 +130,20 @@
           <div class="header-caption">
             <span class="color-title-purple">Explore</span> My Work.
           </div>
+          <div class="project-filters">
+            <button class="filter-button" data-filter="all">All</button>
+            <button class="filter-button" data-filter="game">Game</button>
+            <button class="filter-button" data-filter="programming">Programming</button>
+            <button class="filter-button" data-filter="3DArt">3D Art</button>
+            <button class="filter-button" data-filter="2DArt">2D Art</button>
+          </div>
         </div>
         
         <div class="projects-gallery">
-          <div class="project-item">
-            <img src="images/project-main/Purrject_Rebuild_Placeholder.png" alt="3D model of a Sandwich" class="project-image" />
+          <div class="project-item" data-category="all game programming 3DArt 2DArt">
+            <a href="./projects/purrject_Rebuild.html">
+              <img src="images/project-main/Purrject_Rebuild_Placeholder.png" alt="3D model of a Sandwich" class="project-image"/>
+            </a>
             <div class="project-info">
               <h3 class="project-title">Purrject Rebuild</h3>
               <p class="project-description">The aim of this LEGO Island is to develop an exploration and building game that supports cooperative play between neurodivergent and neurotypical players.
@@ -129,7 +152,7 @@
             </div>
           </div>
           
-          <div class="project-item">
+          <div class="project-item" data-category="all programming">
             <a href="./projects/Anamnesis.html">
               <img src="images/project-main/InteractiveStoryLabs.jpg" alt="Photo of a Camera lens with an Oscar in the Center" class="project-image" />
               </a>
@@ -140,7 +163,7 @@
             </div>
           </div>
           
-          <div class="project-item">
+          <div class="project-item" data-category="all game programming">
             <a href="./projects/Monkeying_Around.html">
               <img src="images/project-main/MonkeyingAround.png" alt="Colorful title Monkeying Around and a monkey paw." class="project-image" />
             </a>
@@ -153,7 +176,7 @@
           </div>
           
           <div class="projects-gallery">
-            <div class="project-item" data-category="game 3DArt">
+            <div class="project-item" data-category="all game 3DArt">
                <a href="./projects/Cat_Go.html">
               <img src="images/project-main/Cat-Go.png" alt="3D model of an old lady with a cat in a leash." class="project-image" />
               </a>
@@ -164,7 +187,7 @@
               </div>
            </div>
 
-            <div class="project-item">
+            <div class="project-item" data-category="all game programming">
               <img src="images/project-main/Meltdown.jpg" alt="3D model of a Sandwich" class="project-image" />
               <div class="project-info">
                 <h3 class="project-title">Meltdown</h3>
@@ -173,7 +196,7 @@
               </div>
             </div>     
 
-            <div class="project-item">
+            <div class="project-item" data-category="all game programming">
               <img src="images/project-main/TheSpaceGame.png" alt="3D model of an old lady with a cat in a leash." class="project-image" />
               <div class="project-info">
                 <h3 class="project-title">The Space Game</h3>

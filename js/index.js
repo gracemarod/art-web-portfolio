@@ -8,7 +8,6 @@ $(window).on('load',function(){
 })
 
 $(function(){
-
   $('.menubar').on("click", function(e) {
     e.preventDefault();
     var navbarLinks = document.getElementById("navbar-links");
@@ -16,8 +15,7 @@ $(function(){
       navbarLinks.classList.remove('responsive');
     }else navbarLinks.classList.add('responsive');
   });
-
-   }); 
+ }); 
 
 $(function(){
     var TxtRotate = function(el, toRotate, period) {
@@ -178,3 +176,22 @@ $(function(){
   })
 
 
+document.addEventListener('DOMContentLoaded', () => {
+  const filterButtons = document.querySelectorAll('.filter-button'); // Your filter buttons
+  const projectItems = document.querySelectorAll('.project-item');
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const filter = button.dataset.filter; // e.g., "game", "all", "3d-art"
+      projectItems.forEach(item => {
+        const itemCategories = item.dataset.category ? item.dataset.category.split(' ') : [];
+        if (filter === 'all' || itemCategories.includes(filter)) {
+          
+          item.style.display = 'block'; // Or whatever shows the item
+        } else {
+          item.style.display = 'none'; // Or whatever hides the item
+        }
+      });
+    });
+  });
+});
