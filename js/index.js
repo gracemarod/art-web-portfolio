@@ -175,7 +175,6 @@ $(function(){
     ]
   })
 
-
 document.addEventListener('DOMContentLoaded', () => {
   const filterButtons = document.querySelectorAll('.filter-button'); // Your filter buttons
   const projectItems = document.querySelectorAll('.project-item');

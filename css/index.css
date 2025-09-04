@@ -863,7 +863,6 @@ button:hover .index {
 }
 
 /* Projects Filter*/
-
 .project-filters{
   display:flex;
   flex-direction: row;
