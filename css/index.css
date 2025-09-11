@@ -1991,12 +1991,17 @@ for tabs and large phones
 
 .project-page-images img{
   max-height: 40vw;
-  
 }
 
-.project-page .website-link:hover {
-  background-color: #7a4dcc;
+.project-page-gif .static{
+  position:absolute;
+  background:white;
 }
+
+.project-page-gif .static:hover {
+  opacity: 0;
+}
+
 .video-section{
   display: flex;
   flex-direction: column;
