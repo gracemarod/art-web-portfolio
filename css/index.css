@@ -863,6 +863,7 @@ button:hover .index {
 }
 
 /* Projects Filter*/
+
 .project-filters{
   display:flex;
   flex-direction: row;
@@ -1991,17 +1992,12 @@ for tabs and large phones
 
 .project-page-images img{
   max-height: 40vw;
+  
 }
 
-.project-page-gif .static{
-  position:absolute;
-  background:white;
+.project-page .website-link:hover {
+  background-color: #7a4dcc;
 }
-
-.project-page-gif .static:hover {
-  opacity: 0;
-}
-
 .video-section{
   display: flex;
   flex-direction: column;
@@ -2020,3 +2016,40 @@ for tabs and large phones
   justify-content: center;
   align-content: center;
 }
+.project-page .project-videos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px 10px;
+
+}
+.project-page .project-videos .project-video{
+  display: flex;
+  flex-direction: column;
+}
+
+.project-page .project-videos .project-video{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-page .project-videos .project-video img{
+  position:absolute;
+  padding-bottom:30px;
+  align-self: center;
+}
+
+.project-page .project-videos .project-video:hover img {
+    opacity:0;
+}
+
+.project-page .project-videos .project-video video{
+  max-height: 28vh;
+  flex: 1 0 50%;
+
+}
+
+/* End of project page style */

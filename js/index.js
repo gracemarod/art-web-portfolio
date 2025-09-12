@@ -1,4 +1,7 @@
 $(window).on('load',function(){
+  // Also works with querySelectorAll
+// const loadingScreens = document.querySelectorAll(".loading-screen");
+gsap.config({nullTargetWarn:false})
   gsap.to('#loader',1,{y:"-100%"});
   gsap.to('#loader',1,{opacity:0});
   gsap.to('#loader',0,{display:"none",delay:1});
@@ -6,6 +9,7 @@ $(window).on('load',function(){
   gsap.to('#navigation-content',0,{display:"none"});
   gsap.to('#navigation-content',0,{display:"flex",delay:1});
 })
+
 
 $(function(){
   $('.menubar').on("click", function(e) {

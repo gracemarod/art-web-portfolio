@@ -33,6 +33,9 @@
       rel="stylesheet"
       type="text/css"
     />
+    <script src="../js/index.js"></script>
+    <script async src="../js/components/nav-bar.js"></script>
+    <script async src="../js/components/video-play-onhover.js"></script>
   </head>
   <body>
     <!-- Navigation -->
@@ -78,14 +81,6 @@
         </p>
       </div>
 
-      <!-- Screenshot Section -->
-      <!-- <div class="screenshot-section">
-        <img src="../images/projects/project1-screenshot1.jpg" alt="Project 1 Screenshot 1" />
-        <p>Description of what is shown in the screenshot.</p>
-        <img src="../images/projects/project1-screenshot2.jpg" alt="Project 1 Screenshot 2" />
-        <p>Description of what is shown in the screenshot.</p>
-      </div> -->
-
       <!-- My Role Section -->
       <div class="role-section">
         <div class="role-section">
@@ -98,9 +93,29 @@
               <p>Engineered a clue system by making each quest’s collectible prop set a dictionary and assigning an ID to each prop piece. If the player found the accommodation, the NPC would provide a clue about the location of a missing prop piece.</p>
               <p>Created a resource manager using UEFN's prop manipulator device to trigger an event whenever the player damaged a Lego block. When this event was triggered, the number of stones received from the block was stored locally and made available for the player to use as currency to build essential props for further game exploration.</p>
               <!-- <p>building assemble device</p> -->
-              <div class="project-page-image">
-                <img src="../images/projects/PurrjectRebuild/npc_dialogue.gif" alt="Animated images of player talking to NPC.">
-                <p>Demonstration of NPC dialgue system using UEFN's canva API and Pop-up device.</p>
+              <div class="project-videos">
+                <div class="project-video">
+                  <img src="../images/play_small.png">
+                  <video src="../images/projects/PurrjectRebuild/npc_dialogue_1.mp4" loop></video>
+                  <p>NPC Dialogue UI</p>
+                </div>
+                <div class="project-video">
+                  <img src="../images/play_small.png">
+                  <video src="../images/projects/PurrjectRebuild/cat_guide.mp4" loop></video>
+                  <p>Cat Guide Location Movement</p>
+                </div>
+                <div class="project-video">
+                  <img src="../images/play_small.png">
+                  <video src="../images/projects/PurrjectRebuild/building_assemble.mp4" loop></video>
+                  <p>Assembling effect on a prop made with UEFN Lego Assets</p>
+                </div>
+                <div class="project-video">
+                  <img src="../images/play_small.png">
+                  <video src="../images/projects/PurrjectRebuild/blueprint_special_effect.mp4" loop></video>
+                  <p>Blueprint piece prop with special effects</p>
+                </div>
+                
+                <!-- <p>Demonstration of NPC dialgue system using UEFN's canva API and Pop-up device.</p> -->
               </div>
           </div>
           <div id="3dart">
@@ -135,7 +150,7 @@
                   "itemsBaseURL":  "../images/projects/PurrjectRebuild/"
                   }' >
                 
-                <a href="npc_dialogue.gif" data-ngthumb="Libby_AvatarT.png">Libby Avatar</a>
+                <a href="Libby_Avatar.png" data-ngthumb="Libby_AvatarT.png">Libby Avatar</a>
                 <a href="Moe_avatar2.png" data-ngthumb="Moe_avatar2T.png">Moe Avatar</a>
                 <a href="Paco_Avatar.png" data-ngthumb="Paco_AvatarT.png">Paco Avatar</a>
                 <a href="Grace_Avatar.png" data-ngthumb="Grace_AvatarT.png">Grace Avatar</a>
@@ -143,7 +158,6 @@
           </div>
         </div>
       </div> 
-
 
 
         <!-- <img src="../images/projects/InteractiStoryLabs/Week1 Test.png" alt="Project 1 Role Image" /> -->
