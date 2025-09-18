@@ -116,14 +116,14 @@ $(function(){
 
     //Mosaic Settings for each image
    galleryMosaic : [                     
-    { w: 2, h: 2, c: 2, r: 1 }, //MoriVivi
-    { w: 1, h: 1, c: 1, r: 2 }, //HighLine
-    { w: 2, h: 2, c: 5, r: 4 }, //1 hr Life Drawing
-    { w: 2, h: 3, c: 4, r: 1 }, //Galaxy Hair
-    { w: 2, h: 3, c: 1, r: 3 }, //Black Elf
-    { w: 2, h: 2, c: 3, r: 4 }, //Colored Pencil
-    { w: 1, h: 1, c: 1, r: 1 }, //Master Studies Ghiblie
-    { w: 1, h: 3, c: 6, r: 1 }, //Renatus
+    { w: 2, h: 2, c: 1, r: 1 }, //MoriVivi
+    { w: 2, h: 2, c: 3, r: 3 }, //HighLine
+    { w: 1, h: 1, c: 5, r: 2 }, //1 hr Life Drawing
+    { w: 1, h: 2, c: 3, r: 1 }, //Grace Avatar
+    { w: 1, h: 2, c: 4, r: 1 }, //Libby Avatar
+    { w: 1, h: 2, c: 2, r: 3 }, //Moe Avatar
+    { w: 1, h: 2, c: 1, r: 3 }, //Paco Avatar
+    { w: 1, h: 1, c: 5, r: 1 }, //Purrject_Rebuild_Concept_Art
   ],
    // layout for XS width
     galleryMosaicXS : [                    
@@ -171,11 +171,11 @@ $(function(){
       {src: 'Mori_Vivi_Forest_Pipes_Rendered.jpg', srct: 'thumbnails/tn_Mori_Vivi_Forest_Pipes_Rendered.jpg', description:'#digital', title:'The Hidden Pipes in Morivivi\'s Forest'},
       {src: 'At_the_High_Line_Observation_Deck.jpeg', srct:'thumbnails/tn_At_the_High_Line_Observation_Deck.jpeg', description: '#traditional', title:'At the High Line Observation Deck', },
       {src: 'Life_Drawing2.jpeg', srct: 'thumbnails/tn_Life_Drawing2.jpeg', description: '#figurative', title:'Long Pose Figure Drawing Study with Pencil'},
-      {src: 'Galaxy_Dreams.jpeg', srct:'thumbnails/tn_Galaxy_Dreams.jpg', description: '#traditional', title: 'Galaxy Dreams'},
-      {src: 'Black_Elf.jpeg', srct: 'thumbnails/tn_Black_Elf.jpeg', description:'#digital', title: 'High Fantasy Black Elf' },
-      {src: 'LifeDrawing_ColoredPencils.jpeg', srct:'thumbnails/tn_LifeDrawing_ColoredPencils.jpeg' , description: '#figurative', title: 'Long Pose Figure Drawing Study with Colored Pencils' },
-      {src: 'Master_studies_ghibli_background.png', srct:'thumbnails/tn_Master_studies_ghibli_background.png', description: '#digital', title:'Master Study of Ghibli\'s Vegetation'},
-      {src: 'Renatus.jpg', srct:'thumbnails/tn_Renatus.jpg', description: '#characterization', title:'Renatus'}
+      {src: 'Grace_Avatar.png', srct: 'thumbnails/Grace_AvatarT.png', description: '#characterization', title:'Characterization of Grace Rodriguez in Lego style.'},
+      {src: 'Libby_Avatar.png', srct: 'thumbnails/Libby_AvatarT.png', description: '#characterization', title:'Characterization of Libby in Lego style.'},
+      {src: 'Moe_avatar2.png', srct: 'thumbnails/Moe_avatar2T.png', description: '#characterization', title:'Characterization of Moe Aguilar in Lego style.'},
+      {src: 'Paco_Avatar.png', srct: 'thumbnails/Paco_AvatarT.png', description: '#characterization', title:'Characterization of Paco Mireles in Lego style.'},
+      {src: 'Purrject_Rebuild_Concept_Art.jpg', srct: 'thumbnails/RebuildtheWorldCA1T.jpg', description: '#traditional', title:'Concept Art of Purrject Rebuild.'}
     ]
   })
 
