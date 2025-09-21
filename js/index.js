@@ -132,10 +132,6 @@ $(function(){
    // layout for SM width
     galleryMosaicSM : [                    
     { w: 2, h: 2, c: 1, r: 1 },
-    { w: 1, h: 1, c: 3, r: 1 },
-    { w: 1, h: 1, c: 3, r: 2 },
-    { w: 1, h: 2, c: 1, r: 3 },
-    { w: 2, h: 3, c: 2, r: 3 },
   ],
     //Settings for images thumbnails
     galleryMaxRows: 1,
