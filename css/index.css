@@ -55,7 +55,7 @@ body {
   user-select: none;
   height: auto;
   overflow-x: hidden;
-  width: 100%;
+  /* width: 100%; */
   background: #101010;
   
 }
@@ -104,7 +104,7 @@ body {
 .iframe-container {
   position: relative;
   overflow: hidden;
-  width: 80%;
+  width: 60%;
   padding-top: 42.85%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 }
 
@@ -863,6 +863,10 @@ button:hover .index {
 }
 
 /* Projects Filter*/
+.project-filter-text {
+  display: none;
+  font-size: 40px;
+}
 
 .project-filters{
   display:flex;
@@ -946,7 +950,8 @@ button:hover .index {
 .project-item {
   border-radius: 8px;
   overflow: hidden;
-  width: 300px;
+  width: 18vw;
+  height: 40vh;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -957,7 +962,7 @@ button:hover .index {
 
 .project-image {
   width: 100%;
-  height: 200px;
+  height: 20vh;
   object-fit: cover;
 }
 
@@ -965,6 +970,7 @@ button:hover .index {
   background-color: #fff;
   padding: 15px;
   text-align: center;
+  height: 100%;
 }
 
 .project-title {
@@ -1540,6 +1546,48 @@ For devices with smaller width like mobile phone
   .hire-me-section {
     display: none;
   }
+
+  .projects-gallery{
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .project-item {
+    width: 90vw;
+    height: 38vh;
+  }
+
+  .project-filter-text {
+    display: block;
+    color:#050505;
+
+  }
+
+  .project-filters{
+    flex-direction: column;
+    position: relative;
+    width:90vw;
+    height: 50px;
+    gap: 0;
+    margin: 0;
+    background-color: #dac7ff;
+  }
+
+  .filter-button {
+    display: none;
+    position: absolute;
+    width:90vw;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+  .project-filters:hover .filter-button {
+    display: block;
+  }
+
+  .iframe-container {
+    width: 100%;
+  }
+
 }
 
 /*
