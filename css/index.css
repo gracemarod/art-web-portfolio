@@ -104,8 +104,10 @@ body {
 .iframe-container {
   position: relative;
   overflow: hidden;
-  width: 60%;
-  padding-top: 42.85%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  /* width: 60%;
+  padding-top: 42.85%; 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  width: 100%;
+  padding-top: 30%;
 }
 
 /* Responsive iframe */
@@ -1565,7 +1567,8 @@ For devices with smaller width like mobile phone
 
   .project-filters{
     flex-direction: column;
-    position: relative;
+    /* position: relative; */
+    position: static;
     width:90vw;
     height: 50px;
     gap: 0;
@@ -1958,13 +1961,13 @@ for tabs and large phones
   color: whitesmoke;
   margin-bottom: 20px;
 }
-.project-page img,
+/* .project-page img,
 .project-page iframe {
   max-width: 100%;
   display: block;
   margin: 20px 0;
   border-radius: 8px;
-}
+} */
 
 .project-page .team-section ul {
   margin:0;
@@ -2014,21 +2017,19 @@ for tabs and large phones
   text-decoration: none;
   border-radius: 5px;
 }
-.project-page-image {
+.project-page-media {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-between;
+  flex-direction: row;
   align-items: center;
+  
 }
-.project-page-image img{
-  margin: 0;
-  max-width: 80vw;
-  margin: 10px 0px;
-}
-.project-page-image p{
- margin: 0;
+
+.project-page-media p{
+ margin: 10px;
  padding: 0;
  font-size: 0.8em;
+ text-align: center;
 }
 
 .project-page-images {
@@ -2037,6 +2038,11 @@ for tabs and large phones
   flex-direction: row;
   justify-content: space-evenly;
 } 
+
+.project-page-image {
+  margin: 0;
+  width: 50vh;
+}
 
 .project-page-images img{
   max-height: 40vw;
@@ -2084,15 +2090,25 @@ for tabs and large phones
   align-items: center;
 }
 
-.project-page .project-videos .project-video img{
+/* .project-page .project-videos .project-video img{
+  position:absolute;
+  padding-bottom:30px;
+  align-self: center;
+} */
+
+.project-video-play-bttn {
   position:absolute;
   padding-bottom:30px;
   align-self: center;
 }
 
-.project-page .project-videos .project-video:hover img {
-    opacity:0;
+.project-videos .project-video:hover img {
+  opacity:0;
 }
+
+/* .project-page .project-videos .project-video:hover img {
+    opacity:0;
+} */
 
 .project-page .project-videos .project-video video{
   max-height: 28vh;

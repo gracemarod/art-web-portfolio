@@ -33,8 +33,9 @@
       <div class="video-section">
         <h3>Interactive Story Labs Halves Presentation</h3>
         <div class="iframe-container">
-          <iframe class="responsive-iframe" src="https://www.youtube.com/embed/sSdH6JrSYcg?start=6292&end=7492" title="Interactive Story Labs Halves Presentation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <video class="responsive-iframe" controls src="../images/projects/InteractiStoryLabs/AnamnesisTrailer.mp4"></video>
         </div>
+        <p>Anamnesis trailer. Trailer made by Jos&#233; Mireles Macario</p>
       </div>
 
       <!-- Project Description -->
@@ -42,35 +43,41 @@
         <h3>Project Description</h3>
         <p>
           Project Anamnesis is a 14-week exploration of interactive storytelling that combines live-action footage with advanced technology to create an emotionally immersive experience. Designed for the C.A.V.E.R.N. system at the Entertainment Technology Center (ETC), the project utilizes a 270-degree curved projection screen and a 20-foot-wide interactive play area, enabling dynamic local player interactions within virtual environments.
-          The project’s goal is to showcase the system’s capabilities, focusing on player interaction design, narrative depth, high-fidelity audio, and real-time user tracking. Team Interactive Story Labs will craft a 3-5 minute immersive journey, giving the viewer the power to actively engage with the unfolding narrative. This experience aims to evoke strong emotional connections, allowing the player to feel a sense of personal agency while deepening their involvement in the story’s world.
+          The project’s goal is to showcase the system’s capabilities, focusing on player interaction design, narrative depth, high-fidelity audio, and real-time user tracking. This experience aims to evoke strong emotional connections, allowing the player to feel a sense of personal agency while deepening their involvement in the story’s world.
         </p>
       </div>
-
-      <div>
-        <h3>Tools and Software</h3>
-        <p>Unity3D - C# - ORBBEC Fento Bolt Sensor </p>
-       </div>
-      <!-- Screenshot Section -->
-      <!-- <div class="screenshot-section">
-        <img src="../images/projects/project1-screenshot1.jpg" alt="Project 1 Screenshot 1" />
-        <p>Description of what is shown in the screenshot.</p>
-        <img src="../images/projects/project1-screenshot2.jpg" alt="Project 1 Screenshot 2" />
-        <p>Description of what is shown in the screenshot.</p>
-      </div> -->
 
       <!-- My Role Section -->
       <div class="role-section">
         <h3>My Contributions</h3>
         <p>
-          I replicated the CAVERN display in the Unity3D with the same scales by adding a cylinder mesh. I also added a canvas object of 5060 x 2060 pixels, which are the pixels of the CAVERN display. For the particular way the projectors are set up, there needs to be two image frames with the same image or video and in the same position for film to be displayed correctly. 
+          I replicated the CAVERN enviorment in Unity3D with using a scaled cylinder mesh and configured a dual Canvas image UI for correct video display.
+  
         </p>
-        <div class="project-page-image">
-          <img src="../images/projects/InteractiStoryLabs/VirtualCavern.png" alt="A 3D cylinder mesh on a plane with uv coordinates.">
-          <p>Screenshot of the virtual CAVERN in Unity3D.</p>
+
+        <div class="project-page-media">
+          <div class="project-page-details">
+            <img class="project-page-image" src="../images/projects/InteractiStoryLabs/Cavern.jpg" alt="A 3D cylinder mesh on a plane with uv coordinates.">
+            <p>ETC CAVERN Screen</p>
+          </div>
+          <div class="project-page-details">
+            <img  class="project-page-image" src="../images/projects/InteractiStoryLabs/VirtualCavern.png" alt="A 3D cylinder mesh on a plane with uv coordinates.">
+            <p>Screenshot of the virtual CAVERN in Unity3D.</p>
+          </div>
         </div>  
-        <p>
-          I added a Stickman Manager from the Body Tracking Unity Asset, which creates a meta skeleton prefab when the sensor captures a person. The meta skeleton tracks the joints of the user by creating points from the world and translating them into the scene, which I used to identify the points that represent the left and right ears and eyes and the chin. I added a prism as a visual indicator of the head orientation as a child of the Stickman Prefab. Later, I implemented a script that calculates the middle point between the ears, and the middle point between the chin and both eyes to place the prism between them. 
+        <p>Implemented body-tracking by adding a Stickman Prefab from the <a href="https://assetstore.unity.com/packages/tools/integration/body-tracking-for-orbbec-femto-bolt-mega-azure-kinect-157915">Body Tracking for Orbbec Femto Bolt Plugin</a>. The meta skeleton tracks the joints of the user by creating points from the world and translating them into the scene, which I used to identify the points that represent the left and right ears and eyes and the chin of the user.
         </p>
+        <div class="project-page-media">
+          <img class="project-page-image" src="../images/projects/InteractiStoryLabs/playtest1.gif">
+            <div class="project-videos">
+                <div class="project-video">
+                  <img class= "project-video-play-bttn" src="../images/play_small.png">
+                  <video src="../images/projects/InteractiStoryLabs/PersonTrackingTest1.mp4" loop></video>
+                  <!-- <p>NPC Dialogue UI</p> -->
+                </div>
+            </div>
+        </div>
+
 
         </p>
         In another script, I look for the prism once the Stickman is in scene, and create a Raycast that begins in the prism and shoots forward towards the CAVERN mesh. When the raycast collides with the mesh collider, it displays an image that is translated to the canvas object with UV coordinates. This creates a visual representation of the head tracking in the CAVERN display. Like so:
@@ -82,9 +89,12 @@
         To create better stability, I implemented a queue to store the rolling average for each uv coordinate that enqueues the newest coordinate after dequeuing the bottom coordinate when the indicated maximum was reached. With different testing, I noticed that a queue with a maximum of 150 make the gaze tracker smoother. This is the current process so far. 
         </p>
 
-        <p>I also assisted with the film shooting by managing the costumes and props for all the scenes.</p> 
-
         <!-- <img src="../images/projects/InteractiStoryLabs/Week1 Test.png" alt="Project 1 Role Image" /> -->
+      </div>
+
+      <div>
+        <h3>Tools and Software</h3>
+        <p>Unity3D - C# - ORBBEC Fento Bolt Sensor </p>
       </div>
 
       <!-- Team Section -->
@@ -110,5 +120,6 @@
     <!-- Scripts -->
     <script async src="../js/index.js"></script>
     <script async src="../js/components/nav-bar.js"></script>
+    <script async src="../js/components/video-play-onhover.js"></script>
   </body>
 </html>
