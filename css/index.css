@@ -104,7 +104,8 @@ body {
 .iframe-container {
   position: relative;
   overflow: hidden;
-  width: 60%;
+  margin: 10px 0;
+  width: 50%;
   padding-top: 32.85%; 
   /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
   /* width: 100%; */
