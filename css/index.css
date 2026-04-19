@@ -269,7 +269,7 @@ body {
 }
 
 .header-gallery {
-  padding: 10vh;
+  padding: 2vh 4vw;
 }
 .slash {
   animation-name: animateslash;

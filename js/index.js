@@ -115,25 +115,7 @@ $(function(){
     itemsBaseURL: './images/portfolio/',
     thumbnailHeight:  'auto XS80 SM120',
     thumbnailWidth:   '300 XSauto SMauto',
-    //Mosaic Settings for each image
-  //  galleryMosaic : [                     
-  //   { w: 2, h: 2, c: 1, r: 1 }, //MoriVivi
-  //   { w: 2, h: 2, c: 3, r: 3 }, //HighLine
-  //   { w: 1, h: 1, c: 5, r: 2 }, //1 hr Life Drawing
-  //   { w: 1, h: 2, c: 3, r: 1 }, //Grace Avatar
-  //   { w: 1, h: 2, c: 4, r: 1 }, //Libby Avatar
-  //   { w: 1, h: 2, c: 2, r: 3 }, //Moe Avatar
-  //   { w: 1, h: 2, c: 1, r: 3 }, //Paco Avatar
-  //   { w: 1, h: 1, c: 5, r: 1 }, //Purrject_Rebuild_Concept_Art
-  // ],
-   // layout for XS width
-  //   galleryMosaicXS : [                    
-  //   { w: 4, h: 5, c: 1, r: 1 }
-  // ],
-   // layout for SM width
-  //   galleryMosaicSM : [                    
-  //   { w: 2, h: 2, c: 1, r: 1 },
-  // ],
+
     //Settings for images thumbnails
     galleryMaxRows: 4,
     galleryDisplayMode: 'rows',
@@ -162,7 +144,9 @@ $(function(){
     galleryTheme: {
         navigationBar: { 
             background : '#8e61e1',
-        },
+            borderRight: '5vw', 
+            borderLeft: '50px'
+        }
     },
     items: [
       {src: 'Mori_Vivi_Forest_Pipes_Rendered.jpg', srct: 'thumbnails/tn_Mori_Vivi_Forest_Pipes_Rendered.jpg', description:'#digital', title:'The Hidden Pipes in Morivivi\'s Forest (2023)'},
