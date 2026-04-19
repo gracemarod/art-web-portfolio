@@ -113,28 +113,29 @@ $(function(){
 
   $("#gmrgallery").nanogallery2({
     itemsBaseURL: './images/portfolio/',
-
+    thumbnailHeight:  'auto XS80 SM120',
+    thumbnailWidth:   '300 XSauto SMauto',
     //Mosaic Settings for each image
-   galleryMosaic : [                     
-    { w: 2, h: 2, c: 1, r: 1 }, //MoriVivi
-    { w: 2, h: 2, c: 3, r: 3 }, //HighLine
-    { w: 1, h: 1, c: 5, r: 2 }, //1 hr Life Drawing
-    { w: 1, h: 2, c: 3, r: 1 }, //Grace Avatar
-    { w: 1, h: 2, c: 4, r: 1 }, //Libby Avatar
-    { w: 1, h: 2, c: 2, r: 3 }, //Moe Avatar
-    { w: 1, h: 2, c: 1, r: 3 }, //Paco Avatar
-    { w: 1, h: 1, c: 5, r: 1 }, //Purrject_Rebuild_Concept_Art
-  ],
+  //  galleryMosaic : [                     
+  //   { w: 2, h: 2, c: 1, r: 1 }, //MoriVivi
+  //   { w: 2, h: 2, c: 3, r: 3 }, //HighLine
+  //   { w: 1, h: 1, c: 5, r: 2 }, //1 hr Life Drawing
+  //   { w: 1, h: 2, c: 3, r: 1 }, //Grace Avatar
+  //   { w: 1, h: 2, c: 4, r: 1 }, //Libby Avatar
+  //   { w: 1, h: 2, c: 2, r: 3 }, //Moe Avatar
+  //   { w: 1, h: 2, c: 1, r: 3 }, //Paco Avatar
+  //   { w: 1, h: 1, c: 5, r: 1 }, //Purrject_Rebuild_Concept_Art
+  // ],
    // layout for XS width
-    galleryMosaicXS : [                    
-    { w: 4, h: 5, c: 1, r: 1 }
-  ],
+  //   galleryMosaicXS : [                    
+  //   { w: 4, h: 5, c: 1, r: 1 }
+  // ],
    // layout for SM width
-    galleryMosaicSM : [                    
-    { w: 2, h: 2, c: 1, r: 1 },
-  ],
+  //   galleryMosaicSM : [                    
+  //   { w: 2, h: 2, c: 1, r: 1 },
+  // ],
     //Settings for images thumbnails
-    galleryMaxRows: 1,
+    galleryMaxRows: 4,
     galleryDisplayMode: 'rows',
     thumbnailLabel: {
       position: 'overImageOnBottom'
@@ -144,8 +145,8 @@ $(function(){
     thumbnailLevelUp: true,
     thumbnailOpenImage: true,
     thumbnailAlignment: 'scaled',
-    thumbnailGutterWidth: 2,
-    thumbnailGutterHeight: 2,
+    thumbnailGutterWidth: 20,
+    thumbnailGutterHeight: 20,
     touchAnimation: true,
     touchAutoOpenDelay: 500,
     // Settings for Navigation Bar and Tags
@@ -164,14 +165,28 @@ $(function(){
         },
     },
     items: [
-      {src: 'Mori_Vivi_Forest_Pipes_Rendered.jpg', srct: 'thumbnails/tn_Mori_Vivi_Forest_Pipes_Rendered.jpg', description:'#digital', title:'The Hidden Pipes in Morivivi\'s Forest'},
-      {src: 'At_the_High_Line_Observation_Deck.jpeg', srct:'thumbnails/tn_At_the_High_Line_Observation_Deck.jpeg', description: '#traditional', title:'At the High Line Observation Deck', },
-      {src: 'Life_Drawing2.jpeg', srct: 'thumbnails/tn_Life_Drawing2.jpeg', description: '#figurative', title:'Long Pose Figure Drawing Study with Pencil'},
-      {src: 'Grace_Avatar.png', srct: 'thumbnails/Grace_AvatarT.png', description: '#characterization', title:'Characterization of Grace Rodriguez in Lego style.'},
-      {src: 'Libby_Avatar.png', srct: 'thumbnails/Libby_AvatarT.png', description: '#characterization', title:'Characterization of Libby in Lego style.'},
-      {src: 'Moe_avatar2.png', srct: 'thumbnails/Moe_avatar2T.png', description: '#characterization', title:'Characterization of Moe Aguilar in Lego style.'},
-      {src: 'Paco_Avatar.png', srct: 'thumbnails/Paco_AvatarT.png', description: '#characterization', title:'Characterization of Paco Mireles in Lego style.'},
-      {src: 'Purrject_Rebuild_Concept_Art.jpg', srct: 'thumbnails/RebuildtheWorldCA1T.jpg', description: '#traditional', title:'Concept Art of Purrject Rebuild.'}
+      {src: 'Mori_Vivi_Forest_Pipes_Rendered.jpg', srct: 'thumbnails/tn_Mori_Vivi_Forest_Pipes_Rendered.jpg', description:'#digital', title:'The Hidden Pipes in Morivivi\'s Forest (2023)'},
+      {src: 'Charco_Azul.jpg', srct:'thumbnails/tn_Charco_Azul.jpg', description: '#traditional', title:'Charco Azul - Colored Pencils', },
+      {src: 'PlayaDeLasMujeres2024.jpg', srct:'thumbnails/tn_PlayaDeLasMujeres2024.jpg', description: '#traditional', title:'Playa de las Mujeres - Watercolor (2023)', },
+      {src: 'PlayaEscambron_05-2024.jpg', srct:'thumbnails/tn_PlayaEscambron_05-2024.jpg', description: '#traditional', title:'Playa Escambron - Watercolor (2024)', },
+      {src: 'PlayaEscambron_12-2024.jpg', srct:'thumbnails/tn_PlayaEscambron_12-2024.jpg', description: '#traditional', title:'Playa Escambron - Watercolor (2024)', },
+      {src: 'At_the_High_Line_Observation_Deck.jpeg', srct:'thumbnails/tn_At_the_High_Line_Observation_Deck.jpeg', description: '#traditional', title:'At the High Line Observation Deck - Merkers (2023)', },
+      {src: 'Purrject_Rebuild_Concept_Art.jpg', srct: 'thumbnails/RebuildtheWorldCA1T.jpg', description: '#traditional', title:'Concept Art of Purrject Rebuild - Watercolor and Colored Pencils (2025)'},
+      {src: 'LifeDrawing.jpeg', srct: 'thumbnails/tn_Life_Drawing2.jpeg', description: '#life_drawing', title:'1 hour Figure Drawing Study - Pencil (2024)'},
+      {src: 'LifeDrawing2_2023.jpg', srct:'thumbnails/tn_LifeDrawing2_2023.jpg', description: '#life_drawing', title:'10 Minutes Life Drawing - Ink (2023)', },
+      {src: 'LifeDrawing3_2023.jpg', srct:'thumbnails/tn_LifeDrawing3_2023.jpg', description: '#life_drawing', title:'10 Minutes Life Drawing - Markers (2023)', },
+      {src: 'LifeDrawing4_2023.jpg', srct:'thumbnails/tn_LifeDrawing4_2023.jpg', description: '#life_drawing', title:'5 Minutes Life Drawing - Ink (2023)', },
+      {src: 'LifeDrawing6_2023.jpg', srct:'thumbnails/tn_LifeDrawing6_2023.jpg', description: '#life_drawing', title:'20 Minutes Life Drawing - Markers and Colored Pencils (2023)', },
+      {src: 'LifeDrawing5_2023.jpg', srct:'thumbnails/tn_LifeDrawing5_2023.jpg', description: '#life_drawing', title:'20 Minutes Life Drawing - Markers (2023', },
+      {src: 'LifeDrawing7_2023.jpg', srct:'thumbnails/tn_LifeDrawing7_2023.jpg', description: '#life_drawing', title:'10 Minutes Life Drawing - Markers (2023)', },
+      {src: 'LifeDrawing8_2023.jpg', srct:'thumbnails/tn_LifeDrawing8_2023.jpg', description: '#life_drawing', title:'20 Minutes Life Drawing - Markers (2023)', },
+    
+      {src: 'Purrject_Grace_Avatar.png', srct: 'thumbnails/Grace_AvatarT.png', description: '#digital', title:'Grace Rodriguez, Lego Style (2025)'},
+      {src: 'Purrject_Libby_Avatar.png', srct: 'thumbnails/Libby_AvatarT.png', description: '#digital', title:'Libby, Lego Style (2025)'},
+      {src: 'Purrject_Moe_avatar2.png', srct: 'thumbnails/Moe_avatar2T.png', description: '#digital', title:'Moe Aguilar, Lego Style (2025)'},
+      {src: 'Purrject_Paco_Avatar.png', srct: 'thumbnails/Paco_AvatarT.png', description: '#digital', title:'Paco Mireles, Lego Style (2025)'},
+       // {src: '', srct:'thumbnails/', description: '#traditional', title:'', },
+     
     ]
   })
 
