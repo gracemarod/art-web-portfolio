@@ -52,7 +52,6 @@ input[type="number"] html {
   width: 100%;
 }
 body {
-  user-select: none;
   height: auto;
   overflow-x: hidden;
   /* width: 100%; */
@@ -104,11 +103,11 @@ body {
 .iframe-container {
   position: relative;
   overflow: hidden;
-  width: 60%;
-  padding-top: 32.85%; 
+  /* width: 60%;
+  padding-top: 32.85%;  */
   /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-  /* width: 100%; */
-  /* padding-top: 30%; */
+  width: 100%; 
+  padding-top: 30%;
 }
 
 /* Responsive iframe */
@@ -268,7 +267,7 @@ body {
 }
 
 .header-gallery {
-  padding: 10vh;
+  padding: 2vh 4vw;
 }
 .slash {
   animation-name: animateslash;
