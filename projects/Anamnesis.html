@@ -31,8 +31,7 @@
 
       <!-- Video Section -->
       <div class="video-section">
-        <h3>Interactive Story Labs Halves Presentation</h3>
-        <div class="iframe-container">
+        <div class="iframe-container-anamnesis">
             <video class="responsive-iframe" controls src="../images/projects/InteractiStoryLabs/AnamnesisTrailer.mp4"></video>
         </div>
         <p>Anamnesis film trailer.</p>
@@ -52,7 +51,6 @@
         <h3>My Contributions</h3>
         <p>
           I replicated the CAVERN enviorment in Unity3D with using a scaled cylinder mesh and configured a dual Canvas image UI for correct video display.
-  
         </p>
 
         <div class="project-page-media">
@@ -65,7 +63,35 @@
             <p>Screenshot of the virtual CAVERN in Unity3D.</p>
           </div>
         </div>  
-        <p>Implemented body-tracking by adding a Stickman Prefab from the <a href="https://assetstore.unity.com/packages/tools/integration/body-tracking-for-orbbec-femto-bolt-mega-azure-kinect-157915">Body Tracking for Orbbec Femto Bolt Plugin</a>. The meta skeleton tracks the joints of the user by creating points from the world and translating them into the scene, which I used to identify the points that represent the left and right ears and eyes and the chin of the user.
+
+        <div class="project-page-media">  
+            <!-- <div class="video-wrapper"> -->
+              <div class="project-videos">
+                  <iframe class="project-video" src="https://www.youtube.com/embed/55mumDaEA3A?si=3V2UEUywqrv8-VHB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+          <!-- </div> -->
+          <!-- <p>Video of the CAVERN enviorment in Unity3D.</p> -->
+
+          <div class="project-videos">
+              <iframe class="project-video" src="https://www.youtube.com/embed/gIfdktXdU8o?si=Ohm2ZhDHU-truvVb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          
+        </div>
+
+        
+        <div class="project-page-media">
+          <div class="project-videos">
+              <iframe class="project-video" src="https://www.youtube.com/embed/9rDvxJGopEg?si=aEVOA-2-gC3e9bow" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+
+          <div class="project-videos">
+              <iframe class="project-video" src="https://www.youtube.com/embed/NknvjakJuOc?si=9qo0e1ybT7TDOhl7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+
+      </div>
+
+        <!-- <p>Implemented body-tracking by adding a Stickman Prefab from the <a href="https://assetstore.unity.com/packages/tools/integration/body-tracking-for-orbbec-femto-bolt-mega-azure-kinect-157915">Body Tracking for Orbbec Femto Bolt Plugin</a>. The <meta> skeleton tracks the joints of the user by creating points from the world and translating them into the scene, which I used to identify the points that represent the left and right ears and eyes and the chin of the user.
         </p>
         <div class="project-page-media">
           <img class="project-page-image" src="../images/projects/InteractiStoryLabs/playtest1.gif">
@@ -73,24 +99,21 @@
                 <div class="project-video">
                   <img class= "project-video-play-bttn" src="../images/play_small.png">
                   <video src="../images/projects/InteractiStoryLabs/PersonTrackingTest1.mp4" loop></video>
-                  <!-- <p>NPC Dialogue UI</p> -->
                 </div>
             </div>
-        </div>
+        </div> -->
 
-
-        </p>
-        In another script, I look for the prism once the Stickman is in scene, and create a Raycast that begins in the prism and shoots forward towards the CAVERN mesh. When the raycast collides with the mesh collider, it displays an image that is translated to the canvas object with UV coordinates. This creates a visual representation of the head tracking in the CAVERN display. Like so:
-        </p>
+        <!-- </p> -->
+        <!-- In another script, I look for the prism once the Stickman is in scene, and create a Raycast that begins in the prism and shoots forward towards the CAVERN mesh. When the raycast collides with the mesh collider, it displays an image that is translated to the canvas object with UV coordinates. This creates a visual representation of the head tracking in the CAVERN display. Like so:
+        </p> -->
 
         <!-- [gif of head tracking] -->
 
-        <p>
+        <!-- <p>
         To create better stability, I implemented a queue to store the rolling average for each uv coordinate that enqueues the newest coordinate after dequeuing the bottom coordinate when the indicated maximum was reached. With different testing, I noticed that a queue with a maximum of 150 make the gaze tracker smoother. This is the current process so far. 
-        </p>
+        </p> -->
 
-        <!-- <img src="../images/projects/InteractiStoryLabs/Week1 Test.png" alt="Project 1 Role Image" /> -->
-      </div>
+      <!-- </div> -->
 
       <div>
         <h3>Tools and Software</h3>
