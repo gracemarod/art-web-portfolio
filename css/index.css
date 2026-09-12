@@ -2023,6 +2023,11 @@ for tabs and large phones
   text-decoration: none;
   border-radius: 5px;
 }
+/* TODO: Make video galler with display: grid 
+Grid vs. Flexbox
+CSS Grid is used for two-dimensional layout, with rows AND columns.
+
+CSS Flexbox is used for one-dimensional layout, with rows OR columns. */
 .project-page-media {
   display: flex;
   justify-content: space-between;
@@ -2042,10 +2047,12 @@ video-wrapper{
 
 
 .project-page-media p{
- margin: 10px;
+ margin: 6vh 10px 10px 10px;
  padding: 0;
  font-size: 0.8em;
- text-align: center;
+ z-index: 4;
+ color:white;
+ outline-color: black;
 }
 
 .project-page-images {
@@ -2087,14 +2094,17 @@ video-wrapper{
   align-content: center;
 }
 .project-page .project-videos {
- position: relative;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
   width: 45%;
-  /* 9/16 = 0.5625 = 56.25% */
-  /* padding-top: 56.25%; */
   max-height: 50vh;
   aspect-ratio: 16/9;
   margin-bottom: 40px;
+    /* 9/16 = 0.5625 = 56.25% */
+  /* padding-top: 56.25%; */
 }
 
 .project-page .project-videos .project-video{
@@ -2106,25 +2116,20 @@ video-wrapper{
   border: none;
 }
 
-
 .project-video-play-bttn {
-  position:absolute;
-  padding-bottom:30px;
-  align-self: center;
+  z-index:4;
+  position:relative;
+  overflow:hidden;
 }
 
-.project-videos .project-video:hover img {
+.project-videos:hover img {
   opacity:0;
 }
 
-/* .project-page .project-videos .project-video:hover img {
-    opacity:0;
-} */
 
 .project-page .project-videos .project-video video{
   max-height: 28vh;
   flex: 1 0 50%;
-
 }
 
 /* End of project page style */

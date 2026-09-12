@@ -1,3 +1,4 @@
+  //TODO: change this into a video Gallery with two videos per row.
   
   const videos = document.querySelectorAll(".project-videos video");
 
