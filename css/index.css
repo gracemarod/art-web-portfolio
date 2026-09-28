@@ -97,7 +97,6 @@ body {
   margin:50px;
 
 }
-
 /* Responsive iframe container */
 /* TODO! Fix demo reel container*/
 .iframe-container {
@@ -849,8 +848,6 @@ button:hover .index {
   height: 50px;
   width: 50px;
   display: block;
-  border-radius: 50%;
-  border: 1px solid whitesmoke;
   background: transparent;
   pointer-events: none;
   position: fixed;
@@ -953,6 +950,16 @@ button:hover .index {
   margin-bottom: 40px;
 }
 
+.projects-gallery-v2{
+  margin: 2vh 2vw;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 20px;
+}
+
 .projects-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -964,8 +971,10 @@ button:hover .index {
 .project-item {
   border-radius: 8px;
   overflow: hidden;
-  width: 18vw;
-  height: 40vh;
+  min-width: 18vw;
+  max-width: 20vw;
+  min-height: 40vh;
+  max-height: 45vh;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
