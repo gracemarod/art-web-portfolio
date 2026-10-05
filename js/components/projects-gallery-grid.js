@@ -6,7 +6,7 @@ let projectsData = {
   p3:["Vespa - Bat 3D Model","All,3DArt","./projects/Vespa_3D_Model.html","images/project-main/HeadshotWithRemesh.png","Placeholder image for Vespa 3D Model","Characer Design and 3D Model for Carnegie Mellon's Introduction to 3D Animation Pipeline Fall 2025.","3D Artist"],
   p4:["Monkeying Around","All,game,programming","./projects/Monkeying_Around.html","images/project-main/MonkeyingAround.png","Colorful title Monkeying Around and a monkey paw.","In this VR adventure, the player is a lost monkey plushie that must climb, through shelves in a toy store basement to reunite with it's mom.","Programmer and Environment Artist"],
   p5:["Cat-Go","All,game,3DArt","./projects/Cat_Go.html","images/project-main/Cat-Go.png","3D model of an old lady with a cat in a leash.","A two player game where a blindfolded player navigates a busy street using a DDR pad, guided by the other player who is a cat that communicates through body movement and meows.","3D and Light Artist"],
-  p6:["2D Art","All,2DArt","./art-gallery.html","images/projects/DotsToDepth/Storyboards/tn_Dots_To_Depth_Storyboard1.jpg","Storyboard for Dots to Depth short film.","Gallery of storyboards, life drawings, landscapes and digital art.","2D Artist"]
+  p6:["2D Art","All,2DArt","./art-gallery.html","images/portfolio/PlayaEscambron_05-2024_T.jpg","Escambron Beach Watercolor Art","Gallery of storyboards, life drawings, landscapes and digital art.","2D Artist"]
 };
 
             //   <!-- <div class="project-item" data-category="all game programming">

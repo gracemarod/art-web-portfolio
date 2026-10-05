@@ -21,6 +21,21 @@
      <!-- JS scripts -->
     <script src="../js/index.js"></script>
     <script async src="../js/components/nav-bar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"
+    ></script>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
   </head>
   <body>
     <!-- Navigation -->
@@ -30,18 +45,18 @@
     <div class="project-page">
       <div class="section-header">
         <span class="color">Cat-Go</span> - Multiplayer Game
+         <h3>Tools and Software: <span class="color-white"></span>Unity3D - Blender - DDR Dancing Pad</h3>
         <span class="header-caption"></span>
+         
       </div>
 
       <!-- Video Section -->
       <div class="video-section">
         <div class="iframe-container">
-          <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/_tx04_O_uJM?si=p5N1-u3UN3Zixb9E&amp;start=7224" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-          
-          <iframe class="responsive-iframe" src="https://www.youtube.com/embed/_tx04_O_uJM?si=RgDC0k_Kap-gzyT7&amp;start=7226" loading="lazy" frameborder="0" gesture="media" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <iframe class="responsive-iframe" src="https://www.youtube.com/embed/ZsJz38SdJtk" loading="lazy" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
-      <h3>Tools and Software: <span class="color-white"></span>Unity3D - Blender - DDR Dancing Pad</h3>
+    
       <!-- Project Description -->
       <div class="description-section">
         <h3>Project Description</h3>
@@ -62,24 +77,29 @@
         <h4><span class="color-purple">2D Artist</span> </h4>
         <p>Designed and painted a 6-foot cardboard painting of the buildings, following the game's color palette for the game's kiosk at our program's annual game festival.</p>
       </div>  
-       <div class="project-page-media">
-        <div class="project-page-images">
-            <img src="../images/projects/Cat-Go/building1.png" alt="3D Building made in Blender">
-            <img src="../images/projects/Cat-Go/building2.png" alt="3D Building made in Blender">
-            <p>3D Building made in Blender for Cat-Go Game enviorment.</p>
-        </div>  
-          <div class="project-page-images">
-            <img src="../images/projects/Cat-Go/DecorationDraft.jpg" alt="Draft ">
-            <img src="../images/projects/Cat-Go/BackgroundArt.JPG" alt="3D Building made in Blender">
-            <p>Cardboard painting used to decorate game kiork in ETC annualk Festival.</p>
-        </div> 
+          <div>
+              <div id="nanogallery2_avatars"
+                data-nanogallery2 = '{
+                  "thumbnailHeight":  "400 XS180 SM200",
+                  "thumbnailWidth":   "350 XS100 SM150",
+                     "thumbnailGutterWidth" : "20 XS10 SM10", 
+                  "thumbnailGutterHeight" : "20 XS10 SM10",
+                "displayDescription": "true",
+                  "itemsBaseURL":  "../images/projects/Cat-Go/"
+                  }' >
+                <a href="building1.png" data-ngthumb="building1T.png">3D Model of Main Building</a>
+                <a href="DecorationDraft.jpg" data-ngthumb="DecorationDraftT.jpg">Draft for Decorative Poster</a>
+                <a href="BackgroundArt.JPG" data-ngthumb="BackgroundArtT.jpg">Poster made with coardboard.</a>
+              </div> 
+          </div>
+<h3>Full Game played in Entertainment of Technology Festival Fall 2024</h3>
+      <div class="video-section">
+         
+        <div class="iframe-container">
+          <iframe class="responsive-iframe" src="https://www.youtube.com/embed/_tx04_O_uJM?si=RgDC0k_Kap-gzyT7&amp;start=7226" loading="lazy" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
       </div>
 
-    <div class="video-section">
-        <!-- <div class="iframe-container">
-          <iframe class="responsive-iframe" src="https://youtube.com/embed/A2MrkH7yo_s?si=7t922TIZjXifL5yO" title="Cat-Go Play Through" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div> -->
-    </div>
     <h3>Time: <span class="color-white">1 week</span></h3>
       <!-- Team Section 
        TODO: Fix Team style and margin
