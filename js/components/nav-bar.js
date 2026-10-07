@@ -12,8 +12,7 @@
           <a href="../index.html" data-text="HOME" id="home-link">HOME</a>
           <a href="../index.html#projects" data-text="PROJECTS" id="home-link">PROJECTS</a>
           <a href="../index.html#about" data-text="ABOUT" id="about-link">ABOUT</a>
-          <a href="../index.html#contact" data-text="CONTACT" id="contact-link">CONTACT</a>
-          <a href="https://drive.google.com/file/d/1jDiT6LBT8F3XrnhIf0IYOXThO4Rs0mbH/view?usp=sharing" data-text="RESUME" id="about-link">RESUME</a>
+          <a href="../contact-me.html" data-text="CONTACT" id="contact-link">CONTACT</a>
         </div>
           <div class="menubar">
             <span class="first-span"></span>

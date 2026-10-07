@@ -689,9 +689,8 @@ body {
 }
 
 .header-caption {
-  opacity: 0.8;
   display: block;
-  font-size: 20px;
+  font-size: 24px;
   padding: 8px;
   padding-top: 15px;
   color: whitesmoke;
@@ -1044,7 +1043,10 @@ button:hover .index {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: whitesmoke;
+  font-size: 24px;
 }
+
 .contact-info::before {
   content: "";
   width: 100%;
@@ -1157,18 +1159,18 @@ form button:hover {
   color: whitesmoke;
   padding: 15px;
   font-family: poppins;
+  font-size:20px;
 }
-.contact-info-icon-text h6 {
-  font-size: 15px;
-  opacity: 0.8;
-}
-.contact-info-icon-text p {
-  font-size: 14px;
-  opacity: 0.7;
-}
+
+  .contact-info-icon-text a:-webkit-any-link{
+    color: whitesmoke;
+    text-decoration: underline;
+  }
+
+
 .icon {
-  height: 40px;
-  opacity: 0.8;
+  max-height: 40px;
+  margin: 10px;
 }
 
 .footer {
@@ -1532,6 +1534,7 @@ For devices with smaller width like mobile phone
     position: relative;
     overflow: hidden;
   }
+
   .contact-info::before {
     content: "";
     width: 100%;
@@ -1544,28 +1547,28 @@ For devices with smaller width like mobile phone
   }
   .contect-info-content-line {
     height: auto;
-    padding: 10px;
+    /* padding: 10px; */
     position: relative;
-    z-index: 2;
     display: flex;
     flex-direction: row;
     align-items: center;
     text-align: left;
-    margin-left: 5%;
+    margin-left: 10px;
   }
+
   .contact-info-icon-text {
     color: whitesmoke;
     padding: 15px;
     font-family: poppins;
+    font-size: 20px;
   }
-  .contact-info-icon-text h6 {
-    font-size: 15px;
-    opacity: 0.8;
+
+
+  .contact-info-icon-text a:-webkit-any-link{
+    color: whitesmoke;
+    text-decoration: none;
   }
-  .contact-info-icon-text p {
-    font-size: 14px;
-    opacity: 0.7;
-  }
+
   .hire-me-section {
     display: none;
   }
@@ -1933,7 +1936,7 @@ for tabs and large phones
     flex-direction: row;
   }
   .contact-info {
-    width: 40%;
+    max-width: 70%;
     background-position: center;
     background-size: cover;
     border-radius: 16px;
@@ -2076,8 +2079,8 @@ video-wrapper{
   max-width: 50vw
 }
 
-.project-page-images img{
-  max-height: 40vw;
+.project-page-image img{
+  max-width: 50vw;
   
 }
 
